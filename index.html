@@ -6,189 +6,77 @@
     <title>Taim's Indonesia Project • Year 4</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Comic+Neue:wght@400;700&display=swap');
-
-        * { margin:0; padding:0; box-sizing:border-box; }
-        body {
-            font-family: 'Comic Neue', cursive;
-            background: linear-gradient(135deg, #ffe0e0, #e0f7fa);
-            background-attachment: fixed;
-            color: #333;
-            padding: 15px;
-        }
-        header {
-            background: linear-gradient(to right, #c8102e, #ff3333);
-            color: white;
-            text-align: center;
-            padding: 40px 20px;
-            border-radius: 25px;
-            box-shadow: 0 10px 30px rgba(200,16,46,0.4);
-            margin-bottom: 25px;
-        }
-        h1 {
-            font-family: 'Kalam', cursive;
-            font-size: 2.8em;
-            text-shadow: 3px 3px 0px #900;
-        }
-        .subtitle { font-size: 1.4em; margin-top: 10px; }
-
-        section {
-            background: white;
-            margin: 25px auto;
-            max-width: 950px;
-            border-radius: 20px;
-            overflow: hidden;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-        }
-        .card {
-            padding: 25px;
-        }
-        h2 {
-            font-family: 'Kalam', cursive;
-            color: #006400;
-            text-align: center;
-            font-size: 2.2em;
-            margin-bottom: 15px;
-            text-shadow: 2px 2px 0px #90ee90;
-        }
-        p {
-            font-size: 1.2em;
-            margin: 15px 0;
-            text-align: center;
-        }
-        img {
-            width: 100%;
-            height: auto;
-            border-radius: 15px;
-            margin: 15px 0;
-            box-shadow: 0 6px 15px rgba(0,0,0,0.2);
-            transition: transform 0.3s;
-        }
-        img:hover { transform: scale(1.03); }
-
-        .flag { 
-            max-width: 320px; 
-            margin: 20px auto; 
-            display: block;
-            border: 5px solid white;
-            box-shadow: 0 0 20px gold;
-        }
-        .food-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-            margin-top: 20px;
-        }
-        .food-item {
-            text-align: center;
-            background: #fff8e1;
-            padding: 15px;
-            border-radius: 15px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        }
-        .food-item p { font-weight: bold; color: #d35400; }
-
-        ul {
-            background: #f0fff0;
-            padding: 20px;
-            border-radius: 15px;
-            margin: 20px 0;
-            font-size: 1.2em;
-        }
-        li {
-            margin: 12px 0;
-            padding-left: 10px;
-        }
-        li::marker { color: #c8102e; font-size: 1.4em; }
-
-        footer {
-            text-align: center;
-            padding: 30px;
-            font-size: 1.3em;
-            color: #c8102e;
-            font-weight: bold;
-            margin-top: 40px;
-        }
-
-        @media (max-width: 600px) {
-            h1 { font-size: 2.2em; }
-            h2 { font-size: 1.8em; }
-            p, li { font-size: 1.1em; }
-        }
+        *{margin:0;padding:0;box-sizing:border-box;}
+        body{font-family:'Comic Neue',cursive;background:linear-gradient(135deg,#ffe0e0,#e0f7fa);background-attachment:fixed;color:#333;padding:15px;}
+        header{background:linear-gradient(to right,#c8102e,#ff3333);color:white;text-align:center;padding:40px 20px;border-radius:25px;box-shadow:0 10px 30px rgba(200,16,46,0.4);margin-bottom:25px;}
+        h1{font-family:'Kalam',cursive;font-size:2.8em;text-shadow:3px 3px 0px #900;}
+        .subtitle{font-size:1.4em;margin-top:10px;}
+        section{background:white;margin:25px auto;max-width:950px;border-radius:20px;overflow:hidden;box-shadow:0 8px 25px rgba(0,0,0,0.15);}
+        .card{padding:25px;}
+        h2{font-family:'Kalam',cursive;color:#006400;text-align:center;font-size:2.2em;margin-bottom:15px;text-shadow:2px 2px 0px #90ee90;}
+        p{font-size:1.2em;margin:15px 0;text-align:center;}
+        img{width:100%;height:auto;border-radius:15px;margin:15px 0;box-shadow:0 6px 15px rgba(0,0,0,0.2);transition:transform .3s;loading:lazy;}
+        img:hover{transform:scale(1.03);}
+        .flag{max-width:320px;margin:20px auto;display:block;border:5px solid white;box-shadow:0 0 20px gold;}
+        .food-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;margin-top:20px;}
+        .food-item{text-align:center;background:#fff8e1;padding:15px;border-radius:15px;box-shadow:0 4px 10px rgba(0,0,0,0.1);}
+        .food-item p{font-weight:bold;color:#d35400;}
+        ul{background:#f0fff0;padding:20px;border-radius:15px;margin:20px 0;font-size:1.2em;}
+        li{margin:12px 0;padding-left:10px;}
+        li::marker{color:#c8102e;font-size:1.4em;}
+        footer{text-align:center;padding:30px;font-size:1.3em;color:#c8102e;font-weight:bold;margin-top:40px;}
+        @media(max-width:600px){h1{font-size:2.2em;}h2{font-size:1.8em;}}
     </style>
 </head>
 <body>
-
 <header>
     <h1>Indonesia</h1>
     <p class="subtitle">The Emerald of the Equator • Year 4 Project by Taim</p>
 </header>
-
-<section>
-    <div class="card">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Flag_of_Indonesia.svg/800px-Flag_of_Indonesia.svg.png" alt="Indonesian Flag" class="flag">
-        <h2>Hello! Selamat Datang!</h2>
-        <p>Indonesia has more than <strong>17,000 islands</strong> and is the biggest island country in the world! Our capital is Jakarta and more than 270 million people live here.</p>
-    </div>
-</section>
-
-<section>
-    <div class="card">
-        <h2>Volcanoes & Beautiful Nature</h2>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Mount_Bromo_2023.jpg/800px-Mount_Bromo_2023.jpg" alt="Mount Bromo">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Ubud_rice_terraces.jpg/800px-Ubud_rice_terraces.jpg" alt="Rice Terraces">
-    </div>
-</section>
-
-<section>
-    <div class="card">
-        <h2>Amazing Animals</h2>
-        <p>Only Indonesia has real Komodo dragons and wild orangutans!</p>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Komodo_dragon_portrait.jpg/800px-Komodo_dragon_portrait.jpg" alt="Komodo Dragon">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Orangutan_in_Sumatra.jpg/800px-Orangutan_in_Sumatra.jpg" alt="Orangutan">
-    </div>
-</section>
-
-<section>
-    <div class="card">
-        <h2>Traditional Dance</h2>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Balinese_dance_performance.jpg/800px-Balinese_dance_performance.jpg" alt="Balinese Dance">
-    </div>
-</section>
-
-<section>
-    <div class="card">
-        <h2>Super Yummy Food!</h2>
-        <div class="food-grid">
-            <div class="food-item">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Nasi_goreng_in_an_Indonesian_restaurant.jpg/800px-Nasi_goreng_in_an_Indonesian_restaurant.jpg" alt="Nasi Goreng">
-                <p>Nasi Goreng (Fried Rice)</p>
-            </div>
-            <div class="food-item">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Sate_ayam.jpg/800px-Sate_ayam.jpg" alt="Satay">
-                <p>Satay (Chicken Skewers)</p>
-            </div>
+<section><div class="card">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Flag_of_Indonesia.svg/800px-Flag_of_Indonesia.svg.png" alt="Indonesian Flag" class="flag" loading="lazy">
+    <h2>Hello! Selamat Datang!</h2>
+    <p>Indonesia has more than <strong>17,000 islands</strong> and is the biggest island country in the world! Our capital is Jakarta and more than 270 million people live here.</p>
+</div></section>
+<section><div class="card">
+    <h2>Volcanoes & Beautiful Nature</h2>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Mount_Bromo_sunrise.jpg/800px-Mount_Bromo_sunrise.jpg" alt="Mount Bromo Volcano" loading="lazy">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Tegallalang_Rice_Terraces_2.jpg/800px-Tegallalang_Rice_Terraces_2.jpg" alt="Bali Rice Terraces" loading="lazy">
+</div></section>
+<section><div class="card">
+    <h2>Amazing Animals</h2>
+    <p>Only Indonesia has real Komodo dragons and wild orangutans!</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Komodo_dragon_at_London_Zoo_2.jpg/800px-Komodo_dragon_at_London_Zoo_2.jpg" alt="Komodo Dragon" loading="lazy">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Orangutan_at_Sumatran_Orangutan_Conservation_Programme.jpg/800px-Orangutan_at_Sumatran_Orangutan_Conservation_Programme.jpg" alt="Orangutan" loading="lazy">
+</div></section>
+<section><div class="card">
+    <h2>Traditional Dance</h2>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Bali_dance.jpg/800px-Bali_dance.jpg" alt="Balinese Dance" loading="lazy">
+</div></section>
+<section><div class="card">
+    <h2>Super Yummy Food!</h2>
+    <div class="food-grid">
+        <div class="food-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Nasi_goreng_Indonesian_fried_rice.jpg/800px-Nasi_goreng_Indonesian_fried_rice.jpg" alt="Nasi Goreng" loading="lazy">
+            <p>Nasi Goreng (Fried Rice)</p>
+        </div>
+        <div class="food-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Sate_ayam_Indonesia.jpg/800px-Sate_ayam_Indonesia.jpg" alt="Satay" loading="lazy">
+            <p>Satay (Grilled Skewers)</p>
         </div>
     </div>
-</section>
-
-<section>
-    <div class="card">
-        <h2>Cool Fun Facts!</h2>
-        <ul>
-            <li>Biggest Muslim country in the world</li>
-            <li>Home of the biggest lizard — Komodo dragon!</li>
-            <li>More than 700 languages are spoken</li>
-            <li>Borobudur is the largest Buddhist temple on Earth</li>
-            <li>The equator runs right through Indonesia</li>
-        </ul>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Borobudur_Temple.jpg/800px-Borobudur_Temple.jpg" alt="Borobudur">
-    </div>
-</section>
-
-<footer>
-    Thank you for learning about Indonesia with me! ♡<br>
-    Made with love by Taim — Year 4
-</footer>
-
+</div></section>
+<section><div class="card">
+    <h2>Cool Fun Facts!</h2>
+    <ul>
+        <li>Biggest Muslim country in the world</li>
+        <li>Home of the biggest lizard — Komodo dragon!</li>
+        <li>More than 700 languages are spoken</li>
+        <li>Borobudur is the largest Buddhist temple on Earth</li>
+        <li>The equator runs right through Indonesia</li>
+    </ul>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Borobudur_Temple_at_Sunrise.jpg/800px-Borobudur_Temple_at_Sunrise.jpg" alt="Borobudur Temple" loading="lazy">
+</div></section>
+<footer>Thank you for learning about Indonesia with me! ♡<br>Made with love by Taim — Year 4</footer>
 </body>
 </html>
